@@ -1,3 +1,3 @@
-const options = { uri: "http://localhost:4000/graphql" };
+const options = { uri: "http://450c833e2cee.ngrok.io" };
 
 export default options;
