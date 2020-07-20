@@ -6,7 +6,7 @@ import AuthInput from "../../components/AuthInput";
 import useInput from "../../hooks/useInput";
 import { Alert } from "react-native";
 import { useMutation } from "react-apollo-hooks";
-import { LOG_IN, CONFIRM_SECRET } from "./AuthQueries";
+import { CONFIRM_SECRET } from "./AuthQueries";
 import { useLogIn } from "../../AuthContext";
 
 const View = styled.View`
