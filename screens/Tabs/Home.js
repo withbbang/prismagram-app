@@ -6,7 +6,7 @@ import Loader from "../../components/Loader";
 import { useQuery } from "react-apollo-hooks";
 import Post from "../../components/Post";
 
-const FEED_QUERY = gql`
+export const FEED_QUERY = gql`
   {
     seeFeed {
       id
@@ -14,10 +14,7 @@ const FEED_QUERY = gql`
       caption
       user {
         id
-        avatar {
-          id
-          fileName
-        }
+        avatar
         name
       }
       files {
