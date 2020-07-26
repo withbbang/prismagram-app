@@ -95,7 +95,7 @@ export default ({ navigation }) => {
         navigation.navigate("TabNavigation");
       }
     } catch (e) {
-      console.log(e);
+      console.log("Error : ", e);
       Alert.alert("Cant upload", "Try later");
     } finally {
       setIsLoading(false);

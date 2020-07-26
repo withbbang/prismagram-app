@@ -52,7 +52,7 @@ export default ({ navigation }) => {
         setHasPermission(true);
       }
     } catch (e) {
-      console.log(e);
+      console.log("Error : ", e);
       setHasPermission(false);
     } finally {
       setLoading(false);

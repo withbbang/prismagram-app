@@ -52,7 +52,7 @@ export default () => {
       setRefreshing(true);
       await refetch();
     } catch (e) {
-      console.log(e);
+      console.log("Error : ", e);
     } finally {
       setRefreshing(false);
     }

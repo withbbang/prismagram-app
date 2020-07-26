@@ -15,7 +15,6 @@ const View = styled.View`
 `;
 
 export default ({ navigation }) => {
-  console.log("param : ", navigation.state.params);
   const email =
     navigation.state.params && navigation.state.params.email
       ? navigation.state.params.email
@@ -62,7 +61,7 @@ export default ({ navigation }) => {
         navigation.navigate("Login", { email });
       }
     } catch (e) {
-      console.log(e);
+      console.log("Error : ", e);
       Alert.alert("Email taken.", "Log in instead");
       navigation.navigate("Login", { email });
     }

@@ -42,7 +42,7 @@ export default ({ navigation }) => {
         Alert.alert("Wrong secret!");
       }
     } catch (e) {
-      console.log(e);
+      console.log("Error : ", e);
       Alert.alert("Can't confirm secret");
     }
   };

@@ -47,7 +47,7 @@ export default ({ navigation }) => {
       setSelected(firstPhoto);
       setAllPhotos(assets);
     } catch (e) {
-      console.log(e);
+      console.log("Error : ", e);
     } finally {
       setLoading(false);
     }
@@ -61,7 +61,7 @@ export default ({ navigation }) => {
         getPhotos();
       }
     } catch (e) {
-      console.log(e);
+      console.log("Error : ", e);
       setHasPermission(false);
     }
   };
